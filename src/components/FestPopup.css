@@ -1,0 +1,308 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 9998;
+}
+
+/* New popup container */
+.popup-container-new {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.popup-content-new {
+    padding: 1.5rem 1.5rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    max-height: 85vh;
+    overflow-y: auto;
+    background: linear-gradient(180deg, #1a0f1f 0%, #0d0511 100%);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+    pointer-events: all;
+    position: relative;
+}
+
+.popup-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    background: rgba(168, 85, 247, 0.1);
+    color: #fff;
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+    line-height: 1;
+}
+
+.popup-close:hover {
+    background: rgba(168, 85, 247, 0.3);
+    transform: rotate(90deg);
+    border-color: rgba(168, 85, 247, 0.6);
+}
+
+
+
+
+.popup-brand {
+    background: rgba(168, 85, 247, 0.1);
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+}
+
+.brand-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+}
+
+.brand-highlight {
+    color: #fff;
+    font-weight: 700;
+}
+
+.popup-main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #d946ef, #ec4899, #f0abfc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 0.95;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    filter: drop-shadow(0 0 20px rgba(217, 70, 239, 0.35));
+}
+
+.popup-tagline {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.tagline-highlight {
+    color: #c084fc;
+    font-weight: 400;
+}
+
+/* Popup countdown */
+.popup-countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.countdown-item {
+    background: rgba(88, 28, 135, 0.4);
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    border-radius: 12px;
+    padding: 0.75rem 0.35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown-number {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0.35rem;
+}
+
+.countdown-text {
+    font-size: 0.55rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* New buttons */
+.popup-btn-primary {
+    width: 100%;
+    padding: 0.85rem 1.25rem;
+    background: transparent;
+    border: 2px solid rgba(168, 85, 247, 0.6);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.popup-btn-primary:hover {
+    background: rgba(168, 85, 247, 0.2);
+    border-color: rgba(168, 85, 247, 0.8);
+    transform: translateY(-2px);
+}
+
+.popup-btn-secondary {
+    width: 100%;
+    padding: 0.8rem 1.25rem;
+    background: transparent;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 0.75rem;
+}
+
+.popup-btn-secondary:hover {
+    background: rgba(168, 85, 247, 0.1);
+    border-color: rgba(168, 85, 247, 0.5);
+}
+
+.popup-extra-details {
+    width: 100%;
+    padding: 0.85rem;
+    background: rgba(168, 85, 247, 0.05);
+    border-radius: 12px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+}
+
+.popup-extra-details p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    margin: 0.4rem 0;
+}
+
+.popup-scroll-indicator {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* Scrollbar */
+.popup-container-new::-webkit-scrollbar {
+    width: 6px;
+}
+
+.popup-container-new::-webkit-scrollbar-track {
+    background: rgba(168, 85, 247, 0.1);
+    border-radius: 10px;
+}
+
+.popup-container-new::-webkit-scrollbar-thumb {
+    background: rgba(168, 85, 247, 0.4);
+    border-radius: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .popup-container-new {
+        width: 92%;
+        max-width: none;
+        border-radius: 20px;
+    }
+
+    .popup-content-new {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
+    .popup-main-title {
+        font-size: 2.5rem;
+    }
+
+    .popup-tagline {
+        font-size: 0.95rem;
+    }
+
+    .countdown-number {
+        font-size: 1.75rem;
+    }
+
+    .countdown-text {
+        font-size: 0.6rem;
+    }
+
+    .popup-btn-primary,
+    .popup-btn-secondary {
+        padding: 0.9rem 1.25rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup-main-title {
+        font-size: 2rem;
+    }
+
+    .popup-tagline {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .popup-countdown {
+        gap: 0.5rem;
+    }
+
+    .countdown-item {
+        padding: 0.75rem 0.25rem;
+    }
+
+    .countdown-number {
+        font-size: 1.5rem;
+    }
+
+    .countdown-text {
+        font-size: 0.55rem;
+    }
+}

@@ -1,0 +1,118 @@
+.faq-page {
+    padding-bottom: 4rem;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.faq-item {
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 10px 40px rgba(184, 124, 211, 0.3);
+    background: rgba(106, 66, 124, 0.15);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.75rem 2rem;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    color: var(--text-color);
+}
+
+.faq-icon {
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+.faq-icon.open {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    overflow: hidden;
+}
+
+.faq-answer p {
+    padding: 0 2rem 1.75rem;
+    color: rgba(184, 124, 211, 0.9);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.faq-footer {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3rem 2.5rem;
+    text-align: center;
+}
+
+.faq-footer .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--text-color), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.faq-footer .section-text {
+    color: rgba(184, 124, 211, 0.9);
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.faq-footer .btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .faq-question {
+        padding: 1.5rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .faq-answer p {
+        padding: 0 1.5rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .faq-footer {
+        padding: 2.5rem 2rem;
+    }
+
+    .faq-footer .section-title {
+        font-size: 1.75rem;
+    }
+
+    .faq-footer .section-text {
+        font-size: 1rem;
+    }
+}

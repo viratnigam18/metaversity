@@ -22,6 +22,300 @@
     color: rgba(184, 124, 211, 0.8);
 }
 
+/* ===== Jashn-e-Sangeet Featured Card ===== */
+.sangeet-featured-card {
+    position: relative;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 107, 53, 0.3);
+    background: linear-gradient(135deg,
+            rgba(155, 35, 53, 0.15) 0%,
+            rgba(214, 51, 132, 0.1) 50%,
+            rgba(255, 107, 53, 0.08) 100%) !important;
+}
+
+.sangeet-card-shimmer {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(255, 215, 0, 0.05) 50%,
+            transparent 100%);
+    animation: cardShimmer 5s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes cardShimmer {
+
+    0%,
+    100% {
+        left: -100%;
+    }
+
+    50% {
+        left: 100%;
+    }
+}
+
+.sangeet-badge-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.sangeet-presents {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #FFD700;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.sangeet-title {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #FFD700, #ff6b35, #d63384, #FFD700);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 4s ease infinite;
+    margin-bottom: 0.75rem;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-shadow: none;
+    filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.3));
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.sangeet-tagline {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+    font-style: italic;
+}
+
+.sangeet-tagline strong {
+    color: #FFD700;
+    font-style: normal;
+}
+
+.sangeet-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.sangeet-info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 107, 53, 0.1);
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    border-radius: 14px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.sangeet-info-item:hover {
+    background: rgba(255, 107, 53, 0.18);
+    transform: translateY(-2px);
+    border-color: rgba(255, 107, 53, 0.4);
+}
+
+.info-icon {
+    font-size: 1.5rem;
+}
+
+.info-label {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 0.15rem;
+}
+
+.info-value {
+    font-size: 0.95rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Highlights */
+.sangeet-highlights-section {
+    margin-bottom: 2rem;
+}
+
+.highlights-title {
+    font-size: 1.3rem;
+    color: #FFD700;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.sangeet-highlights-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.highlight-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(214, 51, 132, 0.15);
+    border: 1px solid rgba(214, 51, 132, 0.25);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.highlight-chip:hover {
+    background: rgba(214, 51, 132, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.2);
+}
+
+.chip-emoji {
+    font-size: 1rem;
+}
+
+.chip-text {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+}
+
+/* Vibe section */
+.sangeet-vibe-section {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    background: rgba(255, 215, 0, 0.05);
+    border: 1px solid rgba(255, 215, 0, 0.15);
+    border-radius: 16px;
+}
+
+.vibe-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+}
+
+.vibe-text em {
+    color: #FFD700;
+    font-weight: 600;
+}
+
+/* Contact */
+.sangeet-contact {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sangeet-contact h4 {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+.contact-row {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-row span {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+}
+
+/* CTA Section */
+.sangeet-cta-section {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.sangeet-register-btn {
+    width: 100%;
+    padding: 1.1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ff6b35, #d63384);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 5px 25px rgba(214, 51, 132, 0.4);
+    letter-spacing: 0.5px;
+}
+
+.sangeet-register-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 35px rgba(214, 51, 132, 0.5);
+    background: linear-gradient(135deg, #ff7b45, #e6438f);
+}
+
+.sangeet-footer-joke {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0.75rem;
+    font-style: italic;
+}
+
+/* Free Mehendi Banner */
+.free-mehendi-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.1));
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 12px;
+    color: #34d399;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.free-mehendi-banner span {
+    font-size: 1.1rem;
+}
+
+/* ===== Past Events ===== */
 .events-grid {
     display: grid;
     gap: 2rem;
@@ -128,6 +422,7 @@
     font-size: 1.1rem;
 }
 
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
     .page-title {
         font-size: 2.5rem;
@@ -135,6 +430,18 @@
 
     .page-subtitle {
         font-size: 1.1rem;
+    }
+
+    .sangeet-featured-card {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .sangeet-title {
+        font-size: 2.2rem;
+    }
+
+    .sangeet-info-grid {
+        grid-template-columns: 1fr;
     }
 
     .event-card {
@@ -152,5 +459,28 @@
         right: 1rem;
         font-size: 0.75rem;
         padding: 0.4rem 0.8rem;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sangeet-title {
+        font-size: 1.8rem;
+    }
+
+    .sangeet-tagline {
+        font-size: 0.95rem;
+    }
+
+    .highlight-chip {
+        padding: 0.4rem 0.75rem;
+    }
+
+    .chip-text {
+        font-size: 0.78rem;
     }
 }

@@ -79,24 +79,28 @@
 
 @media (max-width: 768px) {
     .team-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1rem;
     }
 
     .team-card {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1rem;
     }
 
     .member-avatar {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .member-name {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
+    }
+
+    .member-role {
+        font-size: 0.9rem;
     }
 
     .join-team-section {
-        padding: 2.5rem 2rem;
+        padding: 2rem 1.5rem;
     }
 
     .join-team-section .section-title {
@@ -104,6 +108,44 @@
     }
 
     .join-team-section .section-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .team-card {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .member-avatar {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .member-name {
+        font-size: 1rem;
+    }
+
+    .member-role {
+        font-size: 0.8rem;
+    }
+
+    .join-team-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .join-team-section .section-title {
+        font-size: 1.4rem;
+    }
+
+    .join-team-section .btn {
+        width: 100%;
+        padding: 0.85rem 1.5rem;
         font-size: 1rem;
     }
 }

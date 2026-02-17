@@ -250,6 +250,36 @@
     .feature-card {
         padding: 1.75rem 1.5rem;
     }
+
+    .sponsors-section {
+        padding: 2rem 0;
+    }
+
+    .sponsors-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .sponsors-grid {
+        gap: 1.25rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sponsor-card {
+        padding: 1.25rem 2rem;
+        min-width: unset;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .sponsor-logo {
+        width: 110px;
+    }
+
+    .sponsor-logo.nescafe-logo {
+        width: 130px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -258,33 +288,53 @@
     }
 
     .hero-logo {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
         letter-spacing: 1px;
     }
 
     .tagline-main {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .tagline-sub {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .hero-description {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         line-height: 1.7;
     }
 
     .feature-card h3 {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
 
     .feature-card p {
+        font-size: 0.9rem;
+    }
+
+    .feature-icon {
+        font-size: 2.25rem;
+    }
+
+    .sponsor-card {
+        padding: 1rem 1.5rem;
+    }
+
+    .sponsor-logo {
+        width: 90px;
+    }
+
+    .sponsor-logo.nescafe-logo {
+        width: 110px;
+    }
+
+    .sponsor-name {
         font-size: 0.95rem;
     }
 }

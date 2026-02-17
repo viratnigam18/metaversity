@@ -98,3 +98,30 @@
         gap: 2rem;
     }
 }
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .section-text {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .activity-icon {
+        font-size: 2.25rem;
+    }
+
+    .activity-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .activity-item p {
+        font-size: 0.85rem;
+    }
+}

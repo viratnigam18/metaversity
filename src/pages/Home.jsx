@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import logo from '../assets/logo.png';
+import microsoftLogo from '../assets/microsoft-logo.png';
+import nescafeLogo from '../assets/nescafe-logo.png';
 
 const Home = () => {
     return (
@@ -105,7 +107,7 @@ const Home = () => {
                         <div className="sponsor-card glass">
                             <img
                                 className="sponsor-logo"
-                                src="https://upload.wikimedia.org/wikipedia/commons/8/85/Microsoft.png"
+                                src={microsoftLogo}
                                 alt="Microsoft"
                             />
                             <span className="sponsor-name">Microsoft</span>
@@ -113,7 +115,7 @@ const Home = () => {
                         <div className="sponsor-card glass">
                             <img
                                 className="sponsor-logo nescafe-logo"
-                                src="https://logos-world.net/wp-content/uploads/2020/09/Nescafe-Logo.png"
+                                src={nescafeLogo}
                                 alt="Nescafé"
                             />
                             <span className="sponsor-name">Nescafé</span>

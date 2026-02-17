@@ -1,16 +1,124 @@
-# React + Vite
+# 🌐 Metaversity — Metaverse Club, VIT Bhopal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Where Reality Meets the Next Dimension**
 
-Currently, two official plugins are available:
+The official website of **Metaversity**, the Metaversity Club of VIT Bhopal University. Built with React and Vite, featuring smooth animations and a modern dark theme.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Home** — Hero section with animated logo, taglines, feature cards & sponsor showcase
+- **Events** — Upcoming events (Jashn-e-Sangeet 🎶) with registration + past event archive
+- **About** — Club mission, vision & activities
+- **Team** — Meet the core team members
+- **Gallery** — Photo gallery with lightbox viewer
+- **FAQ** — Expandable Q&A section
+- **Join Us** — Membership info & Instagram CTA
+- **Event Popup** — Floating notification for upcoming events
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Layer | Tech |
+|-------|------|
+| Framework | [React 18](https://react.dev/) |
+| Build Tool | [Vite](https://vitejs.dev/) |
+| Routing | React Router DOM |
+| Animations | Framer Motion |
+| Styling | Vanilla CSS (glassmorphism, gradients) |
+| Font | [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts |
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or later)
+- npm (comes with Node.js)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/metaversity.git
+cd metaversity
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+The app will be available at `http://localhost:5173/`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The production build will be output to the `dist/` directory.
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+metaversity/
+├── public/
+├── src/
+│   ├── assets/            # Images & logos
+│   ├── components/        # Reusable components
+│   │   ├── Navbar.jsx     # Navigation bar
+│   │   ├── Footer.jsx     # Footer
+│   │   ├── FestPopup.jsx  # Event notification popup
+│   │   └── Countdown.jsx  # Countdown timer
+│   ├── pages/             # Page components
+│   │   ├── Home.jsx
+│   │   ├── Event.jsx
+│   │   ├── About.jsx
+│   │   ├── Team.jsx
+│   │   ├── Gallery.jsx
+│   │   ├── FAQ.jsx
+│   │   └── JoinUs.jsx
+│   ├── App.jsx            # Root component with routing
+│   ├── main.jsx           # Entry point
+│   └── index.css          # Global styles & design tokens
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## 🎨 Design System
+
+| Token | Value |
+|-------|-------|
+| Primary | `#6A427C` |
+| Text | `#B87CD3` |
+| Background | `#0f0515` |
+| Accent Glow | `rgba(184, 124, 211, 0.3)` |
+
+## 🌍 Deployment
+
+This project is deployed on **Vercel**. Any push to the `main` branch triggers an automatic deployment.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+## 📬 Contact
+
+- **Instagram** — [@metaverseclub_vitb](https://www.instagram.com/metaverseclub_vitb)
+- **College** — VIT Bhopal University
+
+## 📄 License
+
+This project is maintained by the Metaversity Club, VIT Bhopal.
+
+---
+
+<p align="center">
+  Built with ❤️ by <strong>Virat Nigam</strong> — The Metaverse Club
+</p>

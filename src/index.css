@@ -12,6 +12,10 @@
   --bg-dark: #1a0a1f;
   --bg-darker: #0f0515;
   --accent-glow: rgba(184, 124, 211, 0.3);
+  --neon-purple: #a855f7;
+  --neon-blue: #3b82f6;
+  --neon-gold: #f59e0b;
+  --neon-indigo: #6366f1;
 }
 
 body {
@@ -85,6 +89,28 @@ html {
 
   50% {
     transform: translateY(-20px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes float-slow {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(1deg);
   }
 }
 

@@ -29,6 +29,10 @@ const FAQ = () => {
         {
             question: 'Is there a membership fee?',
             answer: 'Most of our events and workshops are free for members. Some special events may have a nominal fee to cover costs, but we keep everything as accessible as possible.'
+        },
+        {
+            question: 'Who made this website?',
+            answer: 'This entire website was designed & developed from scratch by <strong>Virat Nigam</strong> — yes, one guy built the whole thing. Check out his work on <a href="https://github.com/viratnigam18" target="_blank" rel="noopener noreferrer" style="color:#a855f7;text-decoration:underline">GitHub (@viratnigam18)</a>. Pretty sick, right? 🚀'
         }
     ];
 
@@ -78,7 +82,7 @@ const FAQ = () => {
                                         exit={{ height: 0, opacity: 0 }}
                                         transition={{ duration: 0.3 }}
                                     >
-                                        <p>{faq.answer}</p>
+                                        <p dangerouslySetInnerHTML={{ __html: faq.answer }} />
                                     </motion.div>
                                 )}
                             </AnimatePresence>

@@ -244,8 +244,8 @@ const Home = () => {
                 <motion.div
                     className="ft-hero-inner"
                     style={{ y: heroY, opacity: heroOpacity }}
-                    animate={{ x: mousePos.x * -4, y: mousePos.y * -3 }}
-                    transition={{ x: { type: 'spring', stiffness: 80, damping: 35 }, y: { type: 'spring', stiffness: 80, damping: 35 } }}
+                    animate={{ x: mousePos.x * -4 }}
+                    transition={{ x: { type: 'spring', stiffness: 80, damping: 35 } }}
                 >
                     <motion.div
                         className="ft-hero-logo-wrap"

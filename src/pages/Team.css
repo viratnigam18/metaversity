@@ -102,36 +102,6 @@
     pointer-events: none;
 }
 
-.ld-planet::before {
-    content: '';
-    position: absolute;
-    width: 520px;
-    height: 140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateX(72deg) rotateZ(-15deg);
-    border-radius: 50%;
-    border: 3px solid transparent;
-    background:
-        linear-gradient(135deg,
-            rgba(168, 85, 247, 0.5),
-            rgba(59, 130, 246, 0.35),
-            rgba(245, 158, 11, 0.2),
-            rgba(139, 92, 246, 0.45),
-            rgba(168, 85, 247, 0.5)) border-box;
-    -webkit-mask:
-        linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask:
-        linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
-    mask-composite: exclude;
-    animation: ld-spin 12s linear infinite;
-    opacity: 0.8;
-    filter: blur(0.5px);
-}
-
 .ld-planet::after {
     content: '';
     position: absolute;

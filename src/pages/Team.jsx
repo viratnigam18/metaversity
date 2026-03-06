@@ -16,9 +16,7 @@ import eventLeadImg from '../assets/team/event-lead.jpg';
 import eventCoLead1Img from '../assets/team/event-co-lead-1.jpeg';
 import eventCoLead2Img from '../assets/team/event-co-lead-2.jpeg';
 import techCoLeadImg from '../assets/team/tech-co-lead.png';
-import mediaLead1Img from '../assets/team/media-lead.jpg';
 import mediaLead2Img from '../assets/team/media-lead-2.jpg';
-import mediaCoLead1Img from '../assets/team/media-co-lead.jpg';
 import mediaCoLead2Img from '../assets/team/media-co-lead-2.jpg';
 import prLeadImg from '../assets/team/pr-lead.png';
 import prCoLeadImg from '../assets/team/pr-co-lead.jpg';
@@ -106,10 +104,10 @@ const vicePresident = {
 };
 
 const panelMembers = [
-    { name: '24 Batch Coordinator', role: '24 Batch Coordinator', tagline: 'Guiding club strategy and decisions.', image: panel1Img, linkedin: '#', instagram: '#' },
     { name: 'General Secretary', role: 'General Secretary', tagline: 'Driving community engagement and growth.', image: panel2Img, linkedin: '#', instagram: '#' },
-    { name: '24 Batch Co-Coordinator', role: '24 Batch Co-Coordinator', tagline: 'Bridging technology and creativity.', image: panel3Img, linkedin: '#', instagram: '#' },
     { name: 'Operations Manager', role: 'Operations Manager', tagline: 'Ensuring seamless execution of every initiative and event.', image: opsManagerImg, linkedin: '#', instagram: '#' },
+    { name: '24 Batch Coordinator', role: '24 Batch Coordinator', tagline: 'Guiding club strategy and decisions.', image: panel1Img, linkedin: '#', instagram: '#' },
+    { name: '24 Batch Co-Coordinator', role: '24 Batch Co-Coordinator', tagline: 'Bridging technology and creativity.', image: panel3Img, linkedin: '#', instagram: '#' },
     { name: '24 Batch Co-Coordinator', role: '24 Batch Co-Coordinator', tagline: 'Architecting events and experiences.', image: panel5Img, linkedin: '#', instagram: '#' },
 ];
 
@@ -133,10 +131,8 @@ const teams = [
     {
         title: 'Media Team', icon: '📸', accent: 'pink',
         members: [
-            { name: 'Media Lead', role: 'Lead', tagline: 'Crafting the visual identity of the club.', image: mediaLead1Img, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'Media Lead', role: 'Lead', tagline: 'Capturing moments and telling our story.', image: mediaLead2Img, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'Media Co-Lead', role: 'Co-Lead', tagline: 'Creating engaging visual content.', image: mediaCoLead1Img, linkedin: '#', instagram: '#' },
-            { name: 'Media Co-Lead', role: 'Co-Lead', tagline: 'Editing and producing media assets.', image: mediaCoLead2Img, linkedin: '#', instagram: '#' },
+            { name: 'Gunwaan', role: 'Lead', tagline: 'Crafting the visual identity of the club.', image: mediaLead2Img, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'Arushi', role: 'Co-Lead', tagline: 'Creating engaging visual content.', image: mediaCoLead2Img, linkedin: '#', instagram: '#' },
         ],
     },
     {

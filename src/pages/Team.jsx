@@ -25,6 +25,17 @@ import contentLeadImg from '../assets/team/content-lead.jpg';
 import contentCoLeadImg from '../assets/team/content-co-lead.jpeg';
 import designLeadImg from '../assets/team/design-lead.jpeg';
 import techCoLead2Img from '../assets/team/tech-co-lead-2.jpeg';
+import prCoLeadNewImg from '../assets/team/pr-co-lead-new.jpg';
+import technicalLeadImg from '../assets/team/technical-lead.jpg';
+import photographyLeadImg from '../assets/team/photography-lead.jpg';
+import contentLeadNewImg from '../assets/team/content-lead-new.jpg';
+import treasurerImg from '../assets/team/treasurer.jpg';
+import designLeadNewImg from '../assets/team/design-lead-new.jpg';
+import eventCoLeadNewImg from '../assets/team/event-co-lead-new.jpg';
+import techCoLeadNewImg from '../assets/team/tech-co-lead-new.jpg';
+import eventLeadNewImg from '../assets/team/event-lead-new.jpg';
+import contentCoLeadNewImg from '../assets/team/content-co-lead-new.jpg';
+import prLeadNewImg from '../assets/team/pr-lead-new.jpg';
 
 /* ═══════ 3D TILT CARD ═══════ */
 const TiltCard = ({ children, className = '', intensity = 8 }) => {
@@ -91,7 +102,7 @@ const president = {
     name: 'President',
     role: 'President',
     tagline: 'Leading the vision of Metaversity into the future of Web3 and immersive tech.',
-    image: presidentImg,
+    image: null,
     linkedin: '#', github: '#', instagram: '#',
 };
 
@@ -99,61 +110,59 @@ const vicePresident = {
     name: 'Vice President',
     role: 'Vice President',
     tagline: 'Driving strategic direction and organizational excellence.',
-    image: panel4Img,
+    image: null,
     linkedin: '#', github: '#', instagram: '#',
 };
 
 const panelMembers = [
-    { name: 'General Secretary', role: 'General Secretary', tagline: 'Driving community engagement and growth.', image: panel2Img, linkedin: '#', instagram: '#' },
-    { name: 'Operations Manager', role: 'Operations Manager', tagline: 'Ensuring seamless execution of every initiative and event.', image: opsManagerImg, linkedin: '#', instagram: '#' },
-    { name: '24 Batch Coordinator', role: '24 Batch Coordinator', tagline: 'Guiding club strategy and decisions.', image: panel1Img, linkedin: '#', instagram: '#' },
-    { name: '24 Batch Co-Coordinator', role: '24 Batch Co-Coordinator', tagline: 'Bridging technology and creativity.', image: panel3Img, linkedin: '#', instagram: '#' },
-    { name: '24 Batch Co-Coordinator', role: '24 Batch Co-Coordinator', tagline: 'Architecting events and experiences.', image: panel5Img, linkedin: '#', instagram: '#' },
+    { name: 'General Secretary', role: 'General Secretary', tagline: 'Driving community engagement and growth.', image: null, linkedin: '#', instagram: '#' },
+    { name: 'Operations Manager', role: 'Operations Manager', tagline: 'Ensuring seamless execution of every initiative and event.', image: null, linkedin: '#', instagram: '#' },
+    { name: 'Treasurer', role: 'Treasurer', tagline: 'Managing finances and club resources.', image: treasurerImg, linkedin: '#', instagram: '#' },
+    { name: '24 Batch Co-Coordinator', role: '24 Batch Co-Coordinator', tagline: 'Bridging technology and creativity.', image: null, linkedin: '#', instagram: '#' },
+    { name: '24 Batch Co-Coordinator', role: '24 Batch Co-Coordinator', tagline: 'Architecting events and experiences.', image: null, linkedin: '#', instagram: '#' },
 ];
 
 const teams = [
     {
         title: 'Event Team', icon: '🎪', accent: 'gold',
         members: [
-            { name: 'Event Lead', role: 'Lead', tagline: 'Orchestrating flagship events and hackathons.', image: eventLeadImg, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'Event Co-Lead', role: 'Co-Lead', tagline: 'Coordinating logistics and operations.', image: eventCoLead1Img, linkedin: '#', instagram: '#' },
-            { name: 'Event Co-Lead', role: 'Co-Lead', tagline: 'Managing event outreach and branding.', image: eventCoLead2Img, linkedin: '#', instagram: '#' },
+            { name: 'Event Lead', role: 'Lead', tagline: 'Orchestrating flagship events and hackathons.', image: eventLeadNewImg, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'Event Co-Lead', role: 'Co-Lead', tagline: 'Coordinating logistics and operations.', image: eventCoLeadNewImg, linkedin: '#', instagram: '#' },
         ],
     },
     {
         title: 'Technical Team', icon: '⚡', accent: 'red',
         members: [
-            { name: 'Technical Lead', role: 'Lead', tagline: 'Building the tech backbone of Metaversity.', image: null, isLead: true, linkedin: '#', github: '#' },
-            { name: 'Tech Co-Lead', role: 'Co-Lead', tagline: 'Developing platforms and digital solutions.', image: techCoLeadImg, linkedin: '#', github: '#' },
-            { name: 'Tech Co-Lead', role: 'Co-Lead', tagline: 'Engineering robust technical workflows.', image: techCoLead2Img, linkedin: '#', github: '#' },
+            { name: 'Technical Lead', role: 'Lead', tagline: 'Building the tech backbone of Metaversity.', image: technicalLeadImg, isLead: true, linkedin: '#', github: '#' },
+            { name: 'Tech Co-Lead', role: 'Co-Lead', tagline: 'Developing platforms and digital solutions.', image: techCoLeadNewImg, linkedin: '#', github: '#' },
         ],
     },
     {
         title: 'Media Team', icon: '📸', accent: 'pink',
         members: [
-            { name: 'Gunwaan', role: 'Lead', tagline: 'Crafting the visual identity of the club.', image: mediaLead2Img, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'Arushi', role: 'Co-Lead', tagline: 'Creating engaging visual content.', image: mediaCoLead2Img, linkedin: '#', instagram: '#' },
+            { name: 'Photography Lead', role: 'Photography Lead', tagline: 'Crafting the visual identity of the club.', image: photographyLeadImg, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'Media Co-Lead', role: 'Co-Lead', tagline: 'Creating engaging visual content.', image: null, linkedin: '#', instagram: '#' },
         ],
     },
     {
         title: 'PR Team', icon: '📢', accent: 'emerald',
         members: [
-            { name: 'PR Lead', role: 'Lead', tagline: 'Amplifying our reach and public presence.', image: prLeadImg, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'PR Co-Lead', role: 'Co-Lead', tagline: 'Building partnerships and collaborations.', image: prCoLeadImg, linkedin: '#', instagram: '#' },
+            { name: 'PR Lead', role: 'Lead', tagline: 'Amplifying our reach and public presence.', image: prLeadNewImg, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'PR Co-Lead', role: 'Co-Lead', tagline: 'Building partnerships and collaborations.', image: prCoLeadNewImg, linkedin: '#', instagram: '#' },
         ],
     },
     {
         title: 'Design Team', icon: '🎨', accent: 'rainbow',
         members: [
-            { name: 'Design Lead', role: 'Lead', tagline: 'Shaping the aesthetics of every deliverable.', image: designLeadImg, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'Design Co-Lead', role: 'Co-Lead', tagline: 'Creating stunning graphics and UI designs.', image: designCoLeadImg, linkedin: '#', instagram: '#' },
+            { name: 'Design Lead', role: 'Lead', tagline: 'Shaping the aesthetics of every deliverable.', image: designLeadNewImg, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'Design Co-Lead', role: 'Co-Lead', tagline: 'Creating stunning graphics and UI designs.', image: null, linkedin: '#', instagram: '#' },
         ],
     },
     {
         title: 'Content Team', icon: '✍️', accent: 'cyan',
         members: [
-            { name: 'Content Lead', role: 'Lead', tagline: 'Telling the Metaversity story through words.', image: contentLeadImg, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'Content Co-Lead', role: 'Co-Lead', tagline: 'Crafting copy and managing social posts.', image: contentCoLeadImg, linkedin: '#', instagram: '#' },
+            { name: 'Content Lead', role: 'Lead', tagline: 'Telling the Metaversity story through words.', image: contentLeadNewImg, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'Content Co-Lead', role: 'Co-Lead', tagline: 'Crafting copy and managing social posts.', image: contentCoLeadNewImg, linkedin: '#', instagram: '#' },
         ],
     },
 ];
@@ -175,8 +184,8 @@ const MemberCard = ({ member, accent = 'purple', index = 0, isLead = false }) =>
                     {member.image ? (
                         <img src={member.image} alt={member.name} className="ld-photo" loading="lazy" />
                     ) : (
-                        <div className="ld-photo-placeholder">
-                            <span>{member.name.split(' ').map(n => n[0]).join('').slice(0, 2)}</span>
+                        <div className="ld-photo-placeholder" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', fontWeight: 'bold', textAlign: 'center', lineHeight: '1.3', zIndex: 3, position: 'relative' }}>
+                            <span>Coming<br/>Soon</span>
                         </div>
                     )}
                 </div>
@@ -206,7 +215,13 @@ const FeaturedCard = ({ member, size = 'large', index = 0 }) => {
                     <div className="ld-feat-ring ld-feat-ring-2" />
                     <div className="ld-feat-ring ld-feat-ring-3" />
                     <div className="ld-feat-glow" />
-                    <img src={member.image} alt={member.name} className="ld-feat-photo" loading="lazy" />
+                    {member.image ? (
+                        <img src={member.image} alt={member.name} className="ld-feat-photo" loading="lazy" />
+                    ) : (
+                        <div className="ld-photo-placeholder" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', color: 'rgba(255,255,255,0.7)', fontSize: '1.3rem', fontWeight: 'bold', textAlign: 'center', lineHeight: '1.3', zIndex: 3, position: 'relative' }}>
+                            <span>Coming<br/>Soon</span>
+                        </div>
+                    )}
                 </div>
                 <div className="ld-feat-info">
                     <h2 className="ld-feat-name">{member.name}</h2>

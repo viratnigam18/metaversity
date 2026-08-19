@@ -4,6 +4,14 @@ import './Event.css';
 const Event = () => {
     const pastEvents = [
         {
+            title: 'Jashn-e-Sangeet',
+            date: '28 February 2026',
+            time: '10:00 AM Onwards',
+            venue: 'MPH',
+            description: 'A vibrant event full of music, dance, and unforgettable memories! Featuring a DJ, Mr. & Miss Best Dressed, Dhol Nagada, and much more.',
+            status: 'Completed'
+        },
+        {
             title: 'Codeverse',
             date: '31 May 2025',
             time: 'Full Day Event',
@@ -47,7 +55,7 @@ const Event = () => {
                     <p className="page-subtitle">Join us for exciting events and experiences</p>
                 </motion.div>
 
-                {/* Jashn-e-Sangeet Featured Event */}
+                {/* Upcoming Event Coming Soon */}
                 <motion.div
                     className="sangeet-featured-card glass"
                     initial={{ opacity: 0, y: 30 }}
@@ -57,102 +65,20 @@ const Event = () => {
                     <div className="sangeet-card-shimmer"></div>
 
                     <div className="sangeet-badge-row">
-                        <div className="event-status-badge" data-status="upcoming">
-                            🔥 Upcoming
+                        <div className="event-status-badge" style={{ background: 'rgba(255, 255, 255, 0.1)', color: '#ccc' }}>
+                            ⏳ Loading...
                         </div>
                         <div className="sangeet-presents">
                             ✨ METAVERSE CLUB PRESENTS ✨
                         </div>
                     </div>
 
-                    <h2 className="sangeet-title">Jashn-e-Sangeet</h2>
+                    <h2 className="sangeet-title" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginTop: '1rem', padding: '2rem 0' }}>New Event Coming Soon</h2>
 
-                    <p className="sangeet-tagline">
-                        Pehenne ko sundar kapde hai… par jaane ko event nahi?<br />
-                        <strong>NO worries, we got you covered!</strong>
+                    <p className="sangeet-tagline" style={{ color: 'rgba(255, 255, 255, 0.7)', fontStyle: 'italic', marginBottom: '2rem' }}>
+                        Our team is brewing something spectacular.<br />
+                        <strong>Stay tuned for the big reveal!</strong>
                     </p>
-
-                    <div className="sangeet-info-grid">
-                        <div className="sangeet-info-item">
-                            <span className="info-icon">📅</span>
-                            <div>
-                                <div className="info-label">Date</div>
-                                <div className="info-value">28 February 2026</div>
-                            </div>
-                        </div>
-                        <div className="sangeet-info-item">
-                            <span className="info-icon">⏰</span>
-                            <div>
-                                <div className="info-label">Time</div>
-                                <div className="info-value">10:00 AM Onwards</div>
-                            </div>
-                        </div>
-                        <div className="sangeet-info-item">
-                            <span className="info-icon">📍</span>
-                            <div>
-                                <div className="info-label">Venue</div>
-                                <div className="info-value">MPH</div>
-                            </div>
-                        </div>
-                        <div className="sangeet-info-item">
-                            <span className="info-icon">💰</span>
-                            <div>
-                                <div className="info-label">Entry Fee</div>
-                                <div className="info-value">₹200 (Single) | ₹350 (Duo)</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="sangeet-highlights-section">
-                        <h3 className="highlights-title">🌟 What's Waiting For You?</h3>
-                        <div className="sangeet-highlights-grid">
-                            {sangeetHighlights.map((item, index) => (
-                                <motion.div
-                                    key={index}
-                                    className="highlight-chip"
-                                    initial={{ opacity: 0, scale: 0.8 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    transition={{ delay: 0.4 + index * 0.05, duration: 0.3 }}
-                                >
-                                    <span className="chip-emoji">{item.emoji}</span>
-                                    <span className="chip-text">{item.text}</span>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className="sangeet-vibe-section">
-                        <p className="vibe-text">
-                            ✨ <em>Shaadi wali vibe… bina kisi judgement ke!</em> ✨<br />
-                            Just music, dance, glam & unforgettable memories!
-                        </p>
-                    </div>
-
-                    <div className="sangeet-contact">
-                        <h4>📞 For Queries / Registration:</h4>
-                        <div className="contact-row">
-                            <span>Samiul – 75238 01979</span>
-                            <span>Trisha – 70113 49889</span>
-                        </div>
-                    </div>
-
-                    <div className="sangeet-cta-section">
-                        <a
-                            href="https://forms.gle/CFE7t7nC3EmezMv98"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-primary sangeet-register-btn"
-                        >
-                            🔥 Register Now — Limited Slots!
-                        </a>
-                        <p className="sangeet-footer-joke">
-                            (Nahi to phuphaji naraaz ho jaaenge 😞)
-                        </p>
-                    </div>
-
-                    <div className="free-mehendi-banner">
-                        <span>🎨</span> Free Mehendi Corner Available!
-                    </div>
                 </motion.div>
 
                 {/* Past Events */}

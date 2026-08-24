@@ -138,9 +138,9 @@ const teams = [
         ],
     },
     {
-        title: 'Media Team', icon: '📸', accent: 'pink',
+        title: 'Photography and Media Team', icon: '📸', accent: 'pink',
         members: [
-            { name: 'Photography Lead', role: 'Photography Lead', tagline: 'Crafting the visual identity of the club.', image: photographyLeadImg, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'Media Lead', role: 'Lead', tagline: 'Crafting the visual identity of the club.', image: photographyLeadImg, isLead: true, linkedin: '#', instagram: '#' },
             { name: 'Media Co-Lead', role: 'Co-Lead', tagline: 'Creating engaging visual content.', image: null, linkedin: '#', instagram: '#' },
         ],
     },

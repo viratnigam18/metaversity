@@ -8,7 +8,7 @@ import nescafeLogo from '../assets/nescafe-logo.png';
 import oscodeLogo from '../assets/oscode-logo.png';
 
 /* ── Magnetic button with gradient shine ── */
-const MagneticButton = ({ children, className = '', to }) => {
+const MagneticButton = ({ children, className = '', to, href, target, rel }) => {
     const ref = useRef(null);
 
     const handleMouseMove = useCallback((e) => {
@@ -26,9 +26,14 @@ const MagneticButton = ({ children, className = '', to }) => {
         }
     }, []);
 
+    const Tag = href ? 'a' : Link;
+
     return (
-        <Link
-            to={to}
+        <Tag
+            to={!href ? to : undefined}
+            href={href}
+            target={target}
+            rel={rel}
             ref={ref}
             className={className}
             onMouseMove={handleMouseMove}
@@ -37,7 +42,7 @@ const MagneticButton = ({ children, className = '', to }) => {
         >
             {children}
             <div className="ft-btn-shine" />
-        </Link>
+        </Tag>
     );
 };
 
@@ -287,7 +292,14 @@ const Home = () => {
                             <span>Join the Community</span>
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                         </MagneticButton>
-                        <Link to="/event" className="ft-btn-ghost">Explore Events</Link>
+                        <MagneticButton to="/event" className="ft-btn-primary">
+                            <span>Explore Events</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                        </MagneticButton>
+                        <MagneticButton href="https://docs.google.com/forms/d/e/1FAIpQLSfkiBOv_pFtbjvF2Krr3fYOhWIUTe47P3XcuETiDAzVE9I_pg/viewform?usp=sharing&ouid=102259409612260197255" target="_blank" rel="noopener noreferrer" className="ft-btn-primary">
+                            <span>Recruitment</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                        </MagneticButton>
                     </motion.div>
                 </motion.div>
 

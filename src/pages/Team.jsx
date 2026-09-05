@@ -6,7 +6,14 @@ import './Team.css';
 
 /* ── Photo imports ── */
 import presidentImg from '../assets/team/president.jpeg';
-import opsManagerImg from '../assets/team/operations-manager.jpeg';
+import vicePresidentImg from '../assets/team/vp.jpeg';
+import genSecImg from '../assets/team/gen sec.jpg';
+import batchCoordImg from '../assets/team/24 batch coord.jpg';
+import batchCoCoordImg from '../assets/team/24-batch-co-coord.jpg';
+import photoLeadImg from '../assets/team/photo-lead.jpg';
+import mediaCoLeadImg from '../assets/team/media-co-lead.jpg';
+import photoCoLeadImg from '../assets/team/photo-co-lead.jpg';
+import opsManagerImg from '../assets/team/omg.jpeg';
 import panel1Img from '../assets/team/panel-1.jpg';
 import panel2Img from '../assets/team/panel-2.jpeg';
 import panel3Img from '../assets/team/panel-3.jpeg';
@@ -102,7 +109,7 @@ const president = {
     name: 'President',
     role: 'President',
     tagline: 'Leading the vision of Metaversity into the future of Web3 and immersive tech.',
-    image: null,
+    image: presidentImg,
     linkedin: '#', github: '#', instagram: '#',
 };
 
@@ -110,16 +117,17 @@ const vicePresident = {
     name: 'Vice President',
     role: 'Vice President',
     tagline: 'Driving strategic direction and organizational excellence.',
-    image: null,
+    image: vicePresidentImg,
     linkedin: '#', github: '#', instagram: '#',
 };
 
 const panelMembers = [
-    { name: 'General Secretary', role: 'General Secretary', tagline: 'Driving community engagement and growth.', image: null, linkedin: '#', instagram: '#' },
-    { name: 'Operations Manager', role: 'Operations Manager', tagline: 'Ensuring seamless execution of every initiative and event.', image: null, linkedin: '#', instagram: '#' },
+    { name: 'General Secretary', role: 'General Secretary', tagline: 'Driving community engagement and growth.', image: genSecImg, linkedin: '#', instagram: '#' },
+    { name: 'Operations Manager', role: 'Operations Manager', tagline: 'Ensuring seamless execution of every initiative and event.', image: opsManagerImg, linkedin: '#', instagram: '#' },
     { name: 'Treasurer', role: 'Treasurer', tagline: 'Managing finances and club resources.', image: treasurerImg, linkedin: '#', instagram: '#' },
-    { name: '24 Batch Co-Coordinator', role: '24 Batch Co-Coordinator', tagline: 'Bridging technology and creativity.', image: null, linkedin: '#', instagram: '#' },
-    { name: '24 Batch Co-Coordinator', role: '24 Batch Co-Coordinator', tagline: 'Architecting events and experiences.', image: null, linkedin: '#', instagram: '#' },
+    { name: '24 Batch Coordinator', role: '24 Batch Coordinator', tagline: 'Bridging technology and creativity.', image: batchCoordImg, linkedin: '#', instagram: '#' },
+    { name: '24 Batch Co-Coordinator', role: '24 Batch Co-Coordinator', tagline: 'Architecting events and experiences.', image: batchCoCoordImg, linkedin: '#', instagram: '#' },
+    { name: '25-Batch Coordinator', role: '25-Batch Coordinator', tagline: 'Leading the new batch of innovators.', image: null, linkedin: '#', instagram: '#' },
 ];
 
 const teams = [
@@ -140,8 +148,10 @@ const teams = [
     {
         title: 'Photography and Media Team', icon: '📸', accent: 'pink',
         members: [
-            { name: 'Media Lead', role: 'Lead', tagline: 'Crafting the visual identity of the club.', image: photographyLeadImg, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'Media Co-Lead', role: 'Co-Lead', tagline: 'Creating engaging visual content.', image: null, linkedin: '#', instagram: '#' },
+            { name: 'Media Lead', role: 'Lead', tagline: 'Crafting the visual identity of the club.', image: null, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'Media Co-Lead', role: 'Co-Lead', tagline: 'Creating engaging visual content.', image: mediaCoLeadImg, linkedin: '#', instagram: '#' },
+            { name: 'Photography Lead', role: 'Lead', tagline: 'Capturing the best moments of Metaversity.', image: photoLeadImg, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'Photography Co-Lead', role: 'Co-Lead', tagline: 'Assisting in capturing visual stories.', image: photoCoLeadImg, linkedin: '#', instagram: '#' },
         ],
     },
     {
@@ -155,7 +165,7 @@ const teams = [
         title: 'Design Team', icon: '🎨', accent: 'rainbow',
         members: [
             { name: 'Design Lead', role: 'Lead', tagline: 'Shaping the aesthetics of every deliverable.', image: designLeadNewImg, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'Design Co-Lead', role: 'Co-Lead', tagline: 'Creating stunning graphics and UI designs.', image: null, linkedin: '#', instagram: '#' },
+            { name: 'Design Co-Lead', role: 'Co-Lead', tagline: 'Creating stunning graphics and UI designs.', image: designCoLeadImg, linkedin: '#', instagram: '#' },
         ],
     },
     {

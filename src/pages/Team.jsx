@@ -106,7 +106,7 @@ const RevealSection = ({ children, className = '', delay = 0 }) => {
    ═══════════════════════════════════════════════ */
 
 const president = {
-    name: 'President',
+    name: 'Trisha Kapoor',
     role: 'President',
     tagline: 'Leading the vision of Metaversity into the future of Web3 and immersive tech.',
     image: presidentImg,
@@ -114,7 +114,7 @@ const president = {
 };
 
 const vicePresident = {
-    name: 'Vice President',
+    name: 'Raunak Rai',
     role: 'Vice President',
     tagline: 'Driving strategic direction and organizational excellence.',
     image: vicePresidentImg,
@@ -122,11 +122,11 @@ const vicePresident = {
 };
 
 const panelMembers = [
-    { name: 'General Secretary', role: 'General Secretary', tagline: 'Driving community engagement and growth.', image: genSecImg, linkedin: '#', instagram: '#' },
-    { name: 'Operations Manager', role: 'Operations Manager', tagline: 'Ensuring seamless execution of every initiative and event.', image: opsManagerImg, linkedin: '#', instagram: '#' },
-    { name: 'Treasurer', role: 'Treasurer', tagline: 'Managing finances and club resources.', image: treasurerImg, linkedin: '#', instagram: '#' },
-    { name: '24 Batch Coordinator', role: '24 Batch Coordinator', tagline: 'Bridging technology and creativity.', image: batchCoordImg, linkedin: '#', instagram: '#' },
-    { name: '24 Batch Co-Coordinator', role: '24 Batch Co-Coordinator', tagline: 'Architecting events and experiences.', image: batchCoCoordImg, linkedin: '#', instagram: '#' },
+    { name: 'Aastha Giri', role: 'General Secretary', tagline: 'Driving community engagement and growth.', image: genSecImg, linkedin: '#', instagram: '#' },
+    { name: 'Keshav Pandey', role: 'Operations Manager', tagline: 'Ensuring seamless execution of every initiative and event.', image: opsManagerImg, linkedin: '#', instagram: '#' },
+    { name: 'Ujjwal Sinha', role: 'Treasurer', tagline: 'Managing finances and club resources.', image: treasurerImg, linkedin: '#', instagram: '#' },
+    { name: 'Atharv Gupta', role: '24 Batch Coordinator', tagline: 'Bridging technology and creativity.', image: batchCoordImg, linkedin: '#', instagram: '#' },
+    { name: 'Ashqua Islam', role: '24 Batch Co-Coordinator', tagline: 'Architecting events and experiences.', image: batchCoCoordImg, linkedin: '#', instagram: '#' },
     { name: '25-Batch Coordinator', role: '25-Batch Coordinator', tagline: 'Leading the new batch of innovators.', image: null, linkedin: '#', instagram: '#' },
 ];
 
@@ -134,45 +134,45 @@ const teams = [
     {
         title: 'Event Team', icon: '🎪', accent: 'gold',
         members: [
-            { name: 'Event Lead', role: 'Lead', tagline: 'Orchestrating flagship events and hackathons.', image: eventLeadNewImg, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'Event Co-Lead', role: 'Co-Lead', tagline: 'Coordinating logistics and operations.', image: eventCoLeadNewImg, linkedin: '#', instagram: '#' },
+            { name: 'Parikrama Gargav', role: 'Lead', tagline: 'Orchestrating flagship events and hackathons.', image: eventLeadNewImg, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'Aniket Jain Palandi', role: 'Co-Lead', tagline: 'Coordinating logistics and operations.', image: eventCoLeadNewImg, linkedin: '#', instagram: '#' },
         ],
     },
     {
         title: 'Technical Team', icon: '⚡', accent: 'red',
         members: [
-            { name: 'Technical Lead', role: 'Lead', tagline: 'Building the tech backbone of Metaversity.', image: technicalLeadImg, isLead: true, linkedin: '#', github: '#' },
-            { name: 'Tech Co-Lead', role: 'Co-Lead', tagline: 'Developing platforms and digital solutions.', image: techCoLeadNewImg, linkedin: '#', github: '#' },
+            { name: 'Virat Nigam', role: 'Lead', tagline: 'Building the tech backbone of Metaversity.', image: technicalLeadImg, isLead: true, linkedin: '#', github: '#' },
+            { name: 'Gauri Anil Satpute', role: 'Co-Lead', tagline: 'Developing platforms and digital solutions.', image: techCoLeadNewImg, linkedin: '#', github: '#' },
         ],
     },
     {
         title: 'Photography and Media Team', icon: '📸', accent: 'pink',
         members: [
-            { name: 'Media Lead', role: 'Lead', tagline: 'Crafting the visual identity of the club.', image: null, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'Media Co-Lead', role: 'Co-Lead', tagline: 'Creating engaging visual content.', image: mediaCoLeadImg, linkedin: '#', instagram: '#' },
-            { name: 'Photography Lead', role: 'Lead', tagline: 'Capturing the best moments of Metaversity.', image: photoLeadImg, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'Photography Co-Lead', role: 'Co-Lead', tagline: 'Assisting in capturing visual stories.', image: photoCoLeadImg, linkedin: '#', instagram: '#' },
+            { name: 'Arushi Bakshi', role: 'Lead', tagline: 'Crafting the visual identity of the club.', image: null, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'Shoubhik Bhattacharya', role: 'Co-Lead', tagline: 'Creating engaging visual content.', image: mediaCoLeadImg, linkedin: '#', instagram: '#' },
+            { name: 'Tejas Santosh Paithankar', role: 'Lead', tagline: 'Capturing the best moments of Metaversity.', image: photoLeadImg, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'Pratham Shah', role: 'Co-Lead', tagline: 'Assisting in capturing visual stories.', image: photoCoLeadImg, linkedin: '#', instagram: '#' },
         ],
     },
     {
         title: 'PR Team', icon: '📢', accent: 'emerald',
         members: [
-            { name: 'PR Lead', role: 'Lead', tagline: 'Amplifying our reach and public presence.', image: prLeadNewImg, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'PR Co-Lead', role: 'Co-Lead', tagline: 'Building partnerships and collaborations.', image: prCoLeadNewImg, linkedin: '#', instagram: '#' },
+            { name: 'Amishi Arora', role: 'Lead', tagline: 'Amplifying our reach and public presence.', image: prLeadNewImg, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'Shivang Sharma', role: 'Co-Lead', tagline: 'Building partnerships and collaborations.', image: prCoLeadNewImg, linkedin: '#', instagram: '#' },
         ],
     },
     {
         title: 'Design Team', icon: '🎨', accent: 'rainbow',
         members: [
-            { name: 'Design Lead', role: 'Lead', tagline: 'Shaping the aesthetics of every deliverable.', image: designLeadNewImg, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'Design Co-Lead', role: 'Co-Lead', tagline: 'Creating stunning graphics and UI designs.', image: designCoLeadImg, linkedin: '#', instagram: '#' },
+            { name: 'Navya Gupta', role: 'Lead', tagline: 'Shaping the aesthetics of every deliverable.', image: designLeadNewImg, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'Uchit Jain', role: 'Co-Lead', tagline: 'Creating stunning graphics and UI designs.', image: designCoLeadImg, linkedin: '#', instagram: '#' },
         ],
     },
     {
         title: 'Content Team', icon: '✍️', accent: 'cyan',
         members: [
-            { name: 'Content Lead', role: 'Lead', tagline: 'Telling the Metaversity story through words.', image: contentLeadNewImg, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'Content Co-Lead', role: 'Co-Lead', tagline: 'Crafting copy and managing social posts.', image: contentCoLeadNewImg, linkedin: '#', instagram: '#' },
+            { name: 'Ruchir Ravindra Deshpande', role: 'Lead', tagline: 'Telling the Metaversity story through words.', image: contentLeadNewImg, isLead: true, linkedin: '#', instagram: '#' },
+            { name: 'Komal Pisey', role: 'Co-Lead', tagline: 'Crafting copy and managing social posts.', image: contentCoLeadNewImg, linkedin: '#', instagram: '#' },
         ],
     },
 ];

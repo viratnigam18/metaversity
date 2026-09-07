@@ -222,9 +222,9 @@
 
 /* ── Hero text ── */
 .ft-hero-title {
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(1.8rem, 11vw, 6rem);
     font-weight: 900;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     line-height: 1.05;
 }
 

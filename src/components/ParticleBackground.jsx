@@ -36,7 +36,8 @@ const ParticleBackground = () => {
                 this.size = Math.random() * 2.5 + 0.5;
                 this.speedX = (Math.random() - 0.5) * 0.22;
                 this.speedY = (Math.random() - 0.5) * 0.22;
-                this.color = colors[Math.floor(Math.random() * colors.length)];
+                const colorStr = colors[Math.floor(Math.random() * colors.length)];
+                this.colorRGB = colorStr.substring(0, colorStr.lastIndexOf(','));
                 this.opacity = Math.random() * 0.5 + 0.2;
                 this.pulse = Math.random() * Math.PI * 2;
                 this.pulseSpeed = Math.random() * 0.015 + 0.004;
@@ -80,19 +81,20 @@ const ParticleBackground = () => {
 
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size * (4 + proximityBoost * 6), 0, Math.PI * 2);
-                ctx.fillStyle = this.color.replace(/[\d.]+\)$/, `${(currentOpacity * 0.1 + proximityBoost * 0.15)})`);
+                ctx.fillStyle = `${this.colorRGB}, ${(currentOpacity * 0.1 + proximityBoost * 0.15)})`;
                 ctx.fill();
 
                 // Core dot
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size * (1 + proximityBoost), 0, Math.PI * 2);
-                ctx.fillStyle = this.color.replace(/[\d.]+\)$/, `${currentOpacity + proximityBoost})`);
+                ctx.fillStyle = `${this.colorRGB}, ${currentOpacity + proximityBoost})`;
                 ctx.fill();
             }
         }
 
         const initParticles = () => {
-            const count = Math.min(Math.floor((canvas.width * canvas.height) / 8000), 180);
+            const isMobile = window.innerWidth < 768;
+            const count = Math.min(Math.floor((canvas.width * canvas.height) / (isMobile ? 25000 : 8000)), isMobile ? 30 : 180);
             particles = [];
             for (let i = 0; i < count; i++) {
                 particles.push(new Particle());

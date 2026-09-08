@@ -120,5 +120,5 @@ This project is maintained by the Metaversity Club, VIT Bhopal.
 ---
 
 <p align="center">
-  Built with ❤️ by <strong>Virat Nigam</strong> — The Metaverse Club
+  Built with ❤️ by <strong>Virat Nigam & Md. Anzal Khan</strong> — The Metaverse Club
 </p>

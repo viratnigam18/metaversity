@@ -39,7 +39,7 @@ import contentLeadNewImg from '../assets/team/content-lead-new.jpg';
 import treasurerImg from '../assets/team/treasurer.jpg';
 import designLeadNewImg from '../assets/team/design-lead-new.jpg';
 import eventCoLeadNewImg from '../assets/team/event-co-lead-new.jpg';
-import techCoLeadNewImg from '../assets/team/tech-co-lead-new.jpg';
+import techCoLeadNewImg from '../assets/team/tech-co-lead-new.jpg.jpeg';
 import eventLeadNewImg from '../assets/team/event-lead-new.jpg';
 import contentCoLeadNewImg from '../assets/team/content-co-lead-new.jpg';
 import prLeadNewImg from '../assets/team/pr-lead-new.jpg';
@@ -142,7 +142,7 @@ const teams = [
         title: 'Technical Team', icon: '⚡', accent: 'red',
         members: [
             { name: 'Virat Nigam', role: 'Lead', tagline: 'Building the tech backbone of Metaversity.', image: technicalLeadImg, isLead: true, linkedin: '#', github: '#' },
-            { name: 'Gauri Anil Satpute', role: 'Co-Lead', tagline: 'Developing platforms and digital solutions.', image: techCoLeadNewImg, linkedin: '#', github: '#' },
+            { name: 'Anzal Khan', role: 'Co-Lead', tagline: 'Developing platforms and digital solutions.', image: techCoLeadNewImg, linkedin: '#', github: '#' },
         ],
     },
     {

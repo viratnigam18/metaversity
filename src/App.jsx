@@ -14,7 +14,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <RecruitmentPopup />
+      {/* <RecruitmentPopup /> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

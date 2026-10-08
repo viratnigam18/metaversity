@@ -15,6 +15,36 @@ const Gallery = () => {
             src: '/gallery/photo2.jpg',
             title: 'Event Moments',
             category: 'Event'
+        },
+        {
+            src: '/gallery/photo3.jpeg',
+            title: 'Event Highlights',
+            category: 'Event'
+        },
+        {
+            src: '/gallery/photo4.jpeg',
+            title: 'Team Collaboration',
+            category: 'Team'
+        },
+        {
+            src: '/gallery/photo5.jpeg',
+            title: 'Workshop Session',
+            category: 'Event'
+        },
+        {
+            src: '/gallery/photo6.jpeg',
+            title: 'Campus Drive',
+            category: 'Event'
+        },
+        {
+            src: '/gallery/photo7.jpeg',
+            title: 'Group Photo',
+            category: 'Team'
+        },
+        {
+            src: '/gallery/photo8.jpeg',
+            title: 'Networking',
+            category: 'Event'
         }
     ];
 

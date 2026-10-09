@@ -8,13 +8,15 @@ import Team from './pages/Team';
 import FAQ from './pages/FAQ';
 import JoinUs from './pages/JoinUs';
 import Gallery from './pages/Gallery';
-import RecruitmentPopup from './components/RecruitmentPopup';
+import CodeVersePopup from './components/CodeVersePopup';
+// import RecruitmentPopup from './components/RecruitmentPopup';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <RecruitmentPopup />
+      <CodeVersePopup />
+      {/* <RecruitmentPopup /> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

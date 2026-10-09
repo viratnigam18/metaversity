@@ -1,0 +1,206 @@
+.codeverse-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(10, 5, 20, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.codeverse-popup {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    background: rgba(20, 10, 40, 0.85);
+    border: 1px solid rgba(138, 43, 226, 0.4);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 
+                inset 0 1px 0 rgba(255, 255, 255, 0.1),
+                0 0 40px rgba(138, 43, 226, 0.2);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Background elements */
+.codeverse-popup-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 50% 0%, rgba(138, 43, 226, 0.2) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.codeverse-popup-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(50px);
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 0;
+    animation: floatOrb 6s infinite alternate;
+}
+
+.orb-1 {
+    width: 160px;
+    height: 160px;
+    background: #8a2be2;
+    top: -50px;
+    right: -50px;
+}
+
+.orb-2 {
+    width: 140px;
+    height: 140px;
+    background: #00f0ff;
+    bottom: -30px;
+    left: -30px;
+    animation-delay: -3s;
+}
+
+@keyframes floatOrb {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-20px, 20px); }
+}
+
+/* Close button */
+.codeverse-popup-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+
+.codeverse-popup-close:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    transform: rotate(90deg);
+}
+
+/* Content */
+.codeverse-popup-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.codeverse-popup-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 240, 255, 0.15);
+    border: 1px solid rgba(0, 240, 255, 0.3);
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #00f0ff;
+    margin-bottom: 24px;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+}
+
+.badge-sparkle {
+    font-size: 1.1rem;
+}
+
+.codeverse-popup-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 16px 0;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #00f0ff, #8a2be2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.codeverse-popup-desc {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    max-width: 95%;
+}
+
+/* CTA Button */
+.codeverse-popup-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+    color: #fff;
+    padding: 16px 36px;
+    border-radius: 100px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0, 210, 255, 0.3), 
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.codeverse-popup-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 210, 255, 0.5), 
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.btn-shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-25deg);
+    animation: shine 3.5s infinite;
+}
+
+@keyframes shine {
+    0% { left: -100%; }
+    20% { left: 200%; }
+    100% { left: 200%; }
+}
+
+@media (max-width: 768px) {
+    .codeverse-popup {
+        padding: 30px 20px;
+    }
+    .codeverse-popup-title {
+        font-size: 2.1rem;
+    }
+    .codeverse-popup-desc {
+        font-size: 0.95rem;
+    }
+}

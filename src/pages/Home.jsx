@@ -141,7 +141,7 @@ const steps = [
 const dashboardData = [
     { label: 'Members', value: '70', change: 'Active', up: true },
     { label: 'Codeverse Teams', value: '183', change: 'Registered', up: true },
-    { label: 'Events Hosted', value: '2', change: 'Growing', up: true },
+    { label: 'Events Hosted', value: '3', change: 'Growing', up: true },
     { label: 'Internship Prize', value: '25K', change: 'OSCode', up: true },
 ];
 const activityFeed = [
@@ -296,10 +296,10 @@ const Home = () => {
                             <span>Explore Events</span>
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                         </MagneticButton>
-                        <MagneticButton href="https://docs.google.com/forms/d/e/1FAIpQLSfkiBOv_pFtbjvF2Krr3fYOhWIUTe47P3XcuETiDAzVE9I_pg/viewform?usp=sharing&ouid=102259409612260197255" target="_blank" rel="noopener noreferrer" className="ft-btn-primary">
+                        {/* <MagneticButton href="https://docs.google.com/forms/d/e/1FAIpQLSfkiBOv_pFtbjvF2Krr3fYOhWIUTe47P3XcuETiDAzVE9I_pg/viewform?usp=sharing&ouid=102259409612260197255" target="_blank" rel="noopener noreferrer" className="ft-btn-primary">
                             <span>Recruitment</span>
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
-                        </MagneticButton>
+                        </MagneticButton> */}
                     </motion.div>
                 </motion.div>
 
@@ -317,7 +317,7 @@ const Home = () => {
                 <div className="ft-stats-inner">
                     <StatCard value={70} suffix="+" label="Active Members" inView={statsInView} />
                     <div className="ft-stats-divider" />
-                    <StatCard value={2} suffix="" label="Events Hosted" inView={statsInView} />
+                    <StatCard value={3} suffix="" label="Events Hosted" inView={statsInView} />
                     <div className="ft-stats-divider" />
                     <StatCard value={183} suffix="" label="Teams Registered" inView={statsInView} />
                     <div className="ft-stats-divider" />

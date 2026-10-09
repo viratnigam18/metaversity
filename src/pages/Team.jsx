@@ -121,12 +121,18 @@ const vicePresident = {
     linkedin: '#', github: '#', instagram: '#',
 };
 
+const facultyCoordinator = {
+    name: 'Faculty Coordinator',
+    role: 'Faculty Coordinator',
+    tagline: 'Guiding the club with wisdom, experience, and academic excellence.',
+    image: null,
+    linkedin: '#', github: '#', instagram: '#',
+};
+
 const panelMembers = [
-    { name: 'Aastha Giri', role: 'General Secretary', tagline: 'Driving community engagement and growth.', image: genSecImg, linkedin: '#', instagram: '#' },
+    { name: 'Ashqua Islam', role: 'General Secretary', tagline: 'Driving community engagement and growth.', image: batchCoCoordImg, linkedin: '#', instagram: '#' },
     { name: 'Keshav Pandey', role: 'Operations Manager', tagline: 'Ensuring seamless execution of every initiative and event.', image: opsManagerImg, linkedin: '#', instagram: '#' },
-    { name: 'Ujjwal Sinha', role: 'Treasurer', tagline: 'Managing finances and club resources.', image: treasurerImg, linkedin: '#', instagram: '#' },
-    { name: 'Atharv Gupta', role: '24 Batch Coordinator', tagline: 'Bridging technology and creativity.', image: batchCoordImg, linkedin: '#', instagram: '#' },
-    { name: 'Ashqua Islam', role: '24 Batch Co-Coordinator', tagline: 'Architecting events and experiences.', image: batchCoCoordImg, linkedin: '#', instagram: '#' },
+    { name: 'Ujjwal Sinha', role: '24 Batch Coordinator', tagline: 'Bridging technology and creativity.', image: treasurerImg, linkedin: '#', instagram: '#' },
     { name: '25-Batch Coordinator', role: '25-Batch Coordinator', tagline: 'Leading the new batch of innovators.', image: null, linkedin: '#', instagram: '#' },
 ];
 
@@ -148,8 +154,7 @@ const teams = [
     {
         title: 'Photography and Media Team', icon: '📸', accent: 'pink',
         members: [
-            { name: 'Arushi Bakshi', role: 'Lead', tagline: 'Crafting the visual identity of the club.', image: null, isLead: true, linkedin: '#', instagram: '#' },
-            { name: 'Shoubhik Bhattacharya', role: 'Co-Lead', tagline: 'Creating engaging visual content.', image: mediaCoLeadImg, linkedin: '#', instagram: '#' },
+            { name: 'Shoubhik Bhattacharya', role: 'Lead', tagline: 'Creating engaging visual content.', image: mediaCoLeadImg, isLead: true, linkedin: '#', instagram: '#' },
             { name: 'Tejas Santosh Paithankar', role: 'Lead', tagline: 'Capturing the best moments of Metaversity.', image: photoLeadImg, isLead: true, linkedin: '#', instagram: '#' },
             { name: 'Pratham Shah', role: 'Co-Lead', tagline: 'Assisting in capturing visual stories.', image: photoCoLeadImg, linkedin: '#', instagram: '#' },
         ],
@@ -295,14 +300,19 @@ const Team = () => (
             </motion.div>
         </section>
 
+        {/* ═══ FACULTY COORDINATOR ═══ */}
+        <section className="ld-leadership-row">
+            <FeaturedCard member={facultyCoordinator} size="large" index={0} />
+        </section>
+
         {/* ═══ PRESIDENT ═══ */}
         <section className="ld-leadership-row">
-            <FeaturedCard member={president} size="large" index={0} />
+            <FeaturedCard member={president} size="large" index={1} />
         </section>
 
         {/* ═══ VICE PRESIDENT ═══ */}
         <section className="ld-leadership-row">
-            <FeaturedCard member={vicePresident} size="medium" index={1} />
+            <FeaturedCard member={vicePresident} size="medium" index={2} />
         </section>
 
         {/* ═══ PANEL ═══ */}

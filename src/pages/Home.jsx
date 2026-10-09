@@ -141,7 +141,7 @@ const steps = [
 const dashboardData = [
     { label: 'Members', value: '70', change: 'Active', up: true },
     { label: 'Codeverse Teams', value: '183', change: 'Registered', up: true },
-    { label: 'Events Hosted', value: '2', change: 'Growing', up: true },
+    { label: 'Events Hosted', value: '3', change: 'Growing', up: true },
     { label: 'Internship Prize', value: '25K', change: 'OSCode', up: true },
 ];
 const activityFeed = [
@@ -317,7 +317,7 @@ const Home = () => {
                 <div className="ft-stats-inner">
                     <StatCard value={70} suffix="+" label="Active Members" inView={statsInView} />
                     <div className="ft-stats-divider" />
-                    <StatCard value={2} suffix="" label="Events Hosted" inView={statsInView} />
+                    <StatCard value={3} suffix="" label="Events Hosted" inView={statsInView} />
                     <div className="ft-stats-divider" />
                     <StatCard value={183} suffix="" label="Teams Registered" inView={statsInView} />
                     <div className="ft-stats-divider" />
